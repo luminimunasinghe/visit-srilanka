@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> __QUIZ__ </title>
+    <!-- links-->
+    <link rel="stylesheet" type="text/css" href="quiz_homepage.css">
+    <link rel="stylesheet" type="text/css" href="common.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+    
+
+
+</head>
+
+<body>
+   <!--navigation bar-->
+        <nav>
+            <img class="logo" src="1slLogo.png" alt="">
+            <div class="top">
+                <span style="--i:1">Q</span>
+                <span style="--i:2">U</span>
+                <span style="--i:3">I</span>
+                <span style="--i:4">Z</span>
+                
+            </div>
+        
+            <div class="navigation-icons">
+            <ul>
+                <li>
+                    <a href="Thusitha_student2-1.html">Home</a>
+                    <a href="">Thumbnail images</a>
+                    <a href="quiz_homepage.html"> Quiz</a>
+                    <a href="">Site map</a>
+                    <a href="">Shop</a>
+                    <a href="commentsection.html">Comments</a>
+                    <a href="about_us.html">About us</a>
+        
+                </li>
+            </ul>
+            </div>
+        </nav>
+            
+    
+    <div class="main">
+            
+            <div class="information">      <!-- add photos to the curculer parts-->
+                <div class="overlay"></div>
+                <img src="quiztop.jpeg" alt="" class="quiztop">
+                <div id="circle">
+                    
+                    <div class="feature one">
+                        <img src="foods.png" alt="">
+                        <b>Srilankan Foods</b>
+                        <p><a href="quizone.html"><span style="color: white;font-size: medium; float: left;"> <br><br>Start the Quiz</span></a></p>
+                    </div>
+
+                    <div class="feature two">
+                        <img src="trad.png" alt="">
+                        <b>Traditional Iteams</b>
+                        <p><a href="quiztwo.html"><span style="color: white; font-size: medium;float: left;"> <br><br>Start the Quiz</span></a></p>
+                    </div>
+
+                    <div class="feature three" >
+                        <img src="places.png" alt="">
+                        <b>Places </b>
+                        <p><a  href="quizthree.html"><span style="color: white; font-size:medium;float: left;"> <br><br>Start the Quiz</span></a></p>
+                    </div>
+
+                    <div class="feature four">
+                        <img src="wildlife.jpeg" alt="">
+                        <b>Wild-Life </b>
+                        <p><a href="quizfour.html"><span style="color: white;font-size: medium;float: left;"><br><br>Start the Quiz</span></a></p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="text-block">
+                <h4>e</h4>
+              </div>
+              <div class="text-block1">
+                <h4>e</h4>
+              </div>
+              <div class="text-block2">
+                <h4>e</h4>
+              </div>
+
+            <div class="home">
+                <h1 style="font-family:Papyrus;">__QUIZ__</h1><br><br>     <!-- quiz instractions-->
+                <br><br>
+                <h2>Instructions</h2>
+                <p>Each contains have<b> 5 questions</b><br> and You have <b>1 minute</b><br> to end this quiz. </p>
+                
+                <br><p> At the end of the Quiz, your total score <br>will be displayed out of 5 points.</p>
+                <br><br>
+                <p>Good Luck  !</p><br>
+                
+                
+            </div>
+
+            <div class="controls">
+                <img src="upa.png" alt="" id="upBtn">
+                <h2>Select</h2>
+                <img src="upd.png" alt="" id="downBtn">
+
+            </div>
+
+
+    </div>                     <!--js for circuler part-->
+            <script>
+            var circle = document.getElementById("circle");
+            var upBtn = document.getElementById("upBtn");
+            var downBtn = document.getElementById("downBtn");
+
+            var rotateValue=circle.style.transform;
+            var rotateSum;
+
+            
+            downBtn.onclick = function() {                 //rotate the images for down
+                rotateSum = rotateValue + "rotate(90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            };
+            upBtn.onclick = function() {                   //rotate the images for up
+                rotateSum = rotateValue + "rotate(-90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            };
+
+    </script> 
+
+<div class="footer">
+    <a href="editor.html"><h3> Page Editor </h3></a>
+    <br>
+
+        <div class="icons"  >
+        <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.snapchat.com/en-US"><i class="fab fa-snapchat"></i></a>
+        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="fab fa-twitter"></i></a>
+         <a href="https://web.facebook.com/login/?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
+        </div><br>
+        <p class="copyright">© Copyright visit Srilanka 2023, All rights reserved.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Papyrus;
+}
+.main{
+    width: 100%;
+    height: 110vh;
+    position: relative;
+    overflow: hidden;
+    background: url(Sri\ Lanka.jpg) ;
+}
+
+.information{
+    width: 870px;
+    height: 870px;
+    position: absolute;
+    top:50%;
+    left:-10%;
+    transform: translateY(-50%);
+
+}
+#circle{              /*circuler */
+    width: 870px;
+    height: 870px;
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition:1s;
+    background-color: transparent;
+    
+}
+.feature img{
+    width: 70px;
+}
+.feature{
+    position: absolute;
+    display:flex;
+    color: #fff;
+}
+.feature div{
+    margin-left: 30px;
+    
+}
+.feature form{
+    margin-top: 10px;
+    margin-bottom:10px ;
+    margin-left:10px ;
+    margin-right: 10px;
+}
+
+.one{                             /* sub topic images*/
+    top:400px;
+    right:10px;
+}
+
+.two{
+    top:150px;
+    right:300px;
+    transform: rotate(-90deg);
+}
+.three{
+    bottom:350px;
+    left: 10px;
+    transform: rotate(-180deg);
+}
+.four{
+    bottom: 150px;
+    left:350px;
+    transform: rotate(-270deg);
+}
+.quiztop{               /* top image*/
+    width:200px;
+    position: absolute;
+    top:50%;
+    left:35%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.controls{
+    position:absolute;
+    right: .05%;
+    top:50%;
+    transform: translateY(-50%);
+    color: #ededed;
+}
+.controlsh2{
+    margin: 15px 0;
+    font-family:"timesnew roman";
+}
+.home{
+    position: absolute;
+    right: 10%;
+    top:20%;
+    color: aliceblue;
+    font-family:geneva;
+}
+.class h1:nth-child(1){
+    color: beige;
+}
+
+#upBtn{                          /* up and downs*/
+    width:80px;
+    cursor: pointer;
+}
+#downBtn{
+    width:80px;
+    cursor: pointer;
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid #fff ;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid #fff;
+    border-left: 500px solid #fff;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.h1{
+    color: black;
+}
+
+
+.text-block {
+    position: absolute;
+    top: 200px;
+    bottom: 180px;
+    background-color: white;
+    color:white;
+    padding-left: 100px;
+    padding-right: 74px;
+    
+  }
+  .text-block1 {
+    position: absolute;
+    left: 90px;
+    bottom: -69px;
+    background-color:white;
+    color:white;
+    padding-bottom: 231px;
+    padding-right:310px;
+    
+  }
+  .text-block2 {
+    position: absolute;
+    top: -18px;
+    left: 230px;
+    background-color:white;
+    color:white;
+    padding-top:180px;
+    padding-left:208px;
+    
+  }
+
+/*new font type*/
+  .top {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 50px;
+    left: 80px;
+    
+  }
+  .top span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #068171;
+    text-transform: uppercase;
+    animation: top 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes top {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
+  
